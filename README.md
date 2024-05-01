@@ -1,1 +1,1 @@
-# Webdesign Group Project
+# WebDesign Group Project
