@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+        <meta charset="UTF-8">
+        <meta name ="author" content="Zara Cruise">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <title>Foundations Of Web Design</title>
+        <link href ="assets/css/WebDesign.css" rel="stylesheet">
+    </head>
+    <body>
+
+            <header> 
+                <h1>Web Design Essentials</h1>
+            </header>
+
+
+        <div class="topnav">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="home.html">Home</a>
+                <a href="DesignTheory.html">Design Theory</a>
+              </div>
+              
+              <div id="main">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+              </div> 
+        </div>
+
+         
+        <article>
+        <h2>HTML</h2>
+        <section>
+            <p>HTMl is the standard markup language for Web Pages.
+            HTML stand for Hyper Text Markup Language. It descirbes
+            the strcuture of a webpage, it consists of a series of 
+            elements, these elements tell the browser how to display
+            the content.</p>
+           
+            </section>
+       
+            <div class="container">
+                <img src="assets/img/html-element-diagram.png" alt="HTML Diagram" class="right">
+                <div class="content">
+                    <h3>Elements of HTML:
+                        <ul>
+                            <li>HTML Element</li>
+                            <li>Head Element</li>
+                            <li>Title Element</li>
+                            <li>Base Element</li>
+                            <li>Link Element</li>
+                            <li>Meta Element</li>
+                          </ul>  
+                       </h3>
+                </div>
+            </div>
+
+       <h4>Html is used to create webpages but does experience limitations<br>
+        when it comes to fully responsive components. Therfore html should only<br>
+        be used to add text elements and strutcture them within a page. For more<br>
+        complex features, html can be combined with cascading style sheets(CSS) and javascript(JS).<br>
+        </h4>
+
+    </article>
+
+    <article>
+        <h2>CSS</h2>
+        <section>
+            <p>CSS is an acroynym for Cascading Style Sheets. Css is a 
+                computer lanuage for laying out and styling web pages. It 
+                is usually a textfile srtuctured using a markup language, the
+                most commonly used markup is HTML. CSS can control the style
+                of multiple web pages at once, or you can create seperate style
+                sheets for different pages. </p>
+            </section>
+
+        <h2>Types of CSS:</h2>
+        <table style="width:100%">
+            <tr>
+              <td>External</td>
+              <td>Internal</td>
+              <td>Inline</td>
+            </tr>
+            <tr>
+              <td>A file that HTML files will link to</td>
+              <td>Specified at the beginning of an HTML document</td>
+              <td>Written for a specific element in the HTML document.</td>
+            </tr>
+          </table>
+
+        
+        <h2>The Big Three</h2>
+        <ol>
+            <li>Inheritance</li>
+            <li>Specificty</li>
+            <li>Cascade</li>
+        </ol> 
+    
+
+       <a>Inheritance</a>
+       
+       
+       <h4>some CSS property values set on parent elements are inherited by<br> 
+        their child elements, and some aren't. For example, if you set a<br>
+        color and font-family on an element, every element inside it will <br>
+        also be styled with that color and font, unless you've applied <br>
+        different color and font values directly to them.
+        <p>This very page uses Inheritance css. As you can tell it isn't very
+           flattering sometimes and can be difficult to keep track of.
+        </p>
+     </h4>
+
+          
+
+       
+
+        <a>Specificty</a>
+       
+       <h4>Specificity is the algorithm that the browser uses to decide<br>
+         which property value is applied to an element. If multiple style blocks<br>
+         have different selectors that configure the same property with different<br>
+         values and target the same element, specificity decides the property value<br>
+         that gets applied to the element. Specificity is basically a measure of how specific<br>
+         a selector's selection will be:<br>
+
+        <ul style="padding-left: 30px;">
+        <li>An element selector is less specific; it will select all elements of that type that appear on a page, so it has less weight. Pseudo-element selectors have the same specificity as regular element selectors.</li>
+        <li> A class selector is more specific; it will select only the elements on a page that have a specific class attribute value, so it has more weight. Attribute selectors and pseudo-classes have the same weight as a class.</li>
+    </ul>  
+        </h4>
+        
+
+        
+
+        <a>Cascade</a>
+        <h4>Stylesheets cascade — at a very simple level, this means that the origin,<br>
+             the cascade layer, and the order of CSS rules matter. When two rules from <br>
+             the same cascade layer apply and both have equal specificity, the one that is <br>
+             defined last in the stylesheet is the one that will be used.</h4>
+            
+             <div class="grid-container">
+             <img src="assets/img/css-diagram.png" alt="CSS Diagram" class="right">  
+        </div>
+
+    </article>
+     
+   
+
+
+
+
+        <script src ="assets/js/WebDesign.js"></script>
+    </body>

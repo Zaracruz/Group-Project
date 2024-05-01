@@ -1,0 +1,178 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(254, 253, 251);
+}
+  
+/* Style the header */
+header {
+    background-color: rgb(217, 217, 225);
+    border: 2px solid black;
+    margin: auto;  
+    padding: 10px;
+    text-align: center;
+    color: rgb(27, 5, 168);
+    text-shadow: 2px 2px 5px #b1b0af;
+ }
+
+ /*responsive header text*/
+@media only screen and (max-width: 300px) {
+  header {font-size: 11px}
+}
+ 
+ /* side bar nav */
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #a2a19f;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #030202;
+    display: block;
+    transition: 0.3s;
+    text-shadow: 2px 2px 5px #8b8b8a;
+}
+  
+.sidenav a:hover {
+    color: #fdf8f8;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    color: rgb(27, 5, 168);
+    text-shadow: 2px 2px 5px grey;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+article{
+    background-color: #e8e7e6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+section {
+    text-align: center; /* Aligning text to center */
+    max-width: 1000px; 
+    margin: 40px; /* Centering the section horizontally */
+    padding: 20px; 
+    text-shadow: 2px 2px 5px #d1d0cf;
+}
+
+p {
+  background-color: #fdf8f8;
+  max-width: 1000;
+  border: 5px solid rgb(21, 10, 181);
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+    background-color: rgb(244, 241, 241);
+    width: 200px;
+    border: 2px solid black;
+    padding: 50px;
+    margin: 40px;
+    text-align: center;
+   
+}
+
+ul{
+    text-align: left;
+}
+
+
+/*styling image to be psotions beside list*/
+.container {
+    width: 100%;
+}
+
+.right {
+    float: right;
+    margin-right: 80px; 
+}
+
+.content {
+    overflow: hidden; /* Clear the float */
+}
+
+
+h4{
+    background-color: #fdf8f8;
+    max-width: 1000px;
+    border: 2px solid rgb(21, 10, 181);
+    text-align: center;
+    padding: 20px 50px;
+    margin: 0 auto;
+
+}
+
+/*css table*/
+table, th, td {
+    border:1px solid black;
+    padding: 13px;
+}
+
+ol{
+    border: 2px solid blue;
+    font-weight: bold;
+    padding: 30px;
+    font-size: large;
+}
+
+a{
+    font-size: x-large;
+    font-weight: bold;
+    color: blue;
+    text-align: left;
+    padding:20px 50px;
+}
+
+img{
+    float: right; /* Float the image to the right */
+    width: 570px; /* Set the width */
+    height: 400px; /* Let the height adjust automatically to maintain aspect ratio */
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: #1c06de;
+    padding: 25px 310px;
+}
