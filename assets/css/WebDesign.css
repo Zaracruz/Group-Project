@@ -1,29 +1,31 @@
-body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: rgb(254, 253, 251);
+/* General styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(254, 253, 251);
 }
-  
+
 /* Style the header */
 header {
     background-color: rgb(217, 217, 225);
     border: 2px solid black;
-    margin: auto;  
+    margin: auto;
     padding: 10px;
     text-align: center;
     color: rgb(27, 5, 168);
     text-shadow: 2px 2px 5px #b1b0af;
- }
-
- /*responsive header text*/
-@media only screen and (max-width: 300px) {
-  header {font-size: 11px}
 }
- 
- /* side bar nav */
- .sidenav {
+
+/* Responsive header text */
+@media only screen and (max-width: 300px) {
+    header {
+        font-size: 11px;
+    }
+}
+
+.sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -65,114 +67,111 @@ header {
     text-shadow: 2px 2px 5px grey;
 }
 
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
-article{
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    color: rgb(27, 5, 168);
+    text-shadow: 2px 2px 5px grey;
+}
+
+/* Article styles */
+article {
     background-color: #e8e7e6;
-    max-width: 1200px;
+    max-width: 100%; /* Change max-width to 100% */
     margin: 0 auto;
+    padding: 20px; /* Increase padding for smaller screens */
+    box-sizing: border-box; /* Include padding in max-width calculation */
 }
 
-h2{
+/* Heading styles */
+h2 {
     color: blue;
     text-align: center;
     text-decoration: underline;
 }
 
-
+/* Section styles */
 section {
-    text-align: center; /* Aligning text to center */
-    max-width: 1000px; 
-    margin: 40px; /* Centering the section horizontally */
-    padding: 20px; 
+    text-align: center;
+    max-width: 100%;
+    margin: 20px; /* Reduce margin for smaller screens */
+    padding: 10px; /* Reduce padding for smaller screens */
+    box-sizing: border-box; /* Include padding in max-width calculation */
     text-shadow: 2px 2px 5px #d1d0cf;
 }
 
+/* Paragraph styles */
 p {
-  background-color: #fdf8f8;
-  max-width: 1000;
-  border: 5px solid rgb(21, 10, 181);
-  margin: auto;  
-  padding: 20px;
-  text-align: center;
+    background-color: #fdf8f8;
+    border: 5px solid rgb(21, 10, 181);
+    margin: 0 auto;
+    padding: 10px; /* Adjust padding for smaller screens */
+    text-align: center;
 }
 
+/* Heading styles */
 h3 {
     background-color: rgb(244, 241, 241);
-    width: 200px;
     border: 2px solid black;
-    padding: 50px;
-    margin: 40px;
+    padding: 20px;
+    margin: 20px; /* Reduce margin for smaller screens */
     text-align: center;
-   
 }
 
-ul{
+/* Unordered list styles */
+ul {
     text-align: left;
 }
 
-
-/*styling image to be psotions beside list*/
-.container {
-    width: 100%;
+/* Image styles */
+img {
+    max-width: 100%; /* Ensure images don't overflow their containers */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    display: block; /* Ensure images don't cause spacing issues */
+    margin: 0 auto; /* Center images */
 }
 
-.right {
-    float: right;
-    margin-right: 80px; 
+/* Button styles */
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto; /* Center the button */
 }
 
-.content {
-    overflow: hidden; /* Clear the float */
+/* Button hover styles */
+.button:hover {
+    background-color: #0056b3;
 }
 
-
-h4{
-    background-color: #fdf8f8;
-    max-width: 1000px;
-    border: 2px solid rgb(21, 10, 181);
-    text-align: center;
-    padding: 20px 50px;
+/* Table styles */
+table {
+    width: 100%; /* Make tables responsive */
+    border-collapse: collapse;
     margin: 0 auto;
-
 }
 
-/*css table*/
-table, th, td {
-    border:1px solid black;
-    padding: 13px;
-}
-
-ol{
-    border: 2px solid blue;
-    font-weight: bold;
-    padding: 30px;
-    font-size: large;
-}
-
-a{
-    font-size: x-large;
-    font-weight: bold;
-    color: blue;
+/* Table cell styles */
+td, th {
+    border: 1px solid black;
+    padding: 8px;
     text-align: left;
-    padding:20px 50px;
 }
 
-img{
-    float: right; /* Float the image to the right */
-    width: 570px; /* Set the width */
-    height: 400px; /* Let the height adjust automatically to maintain aspect ratio */
-    
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
-    background-color: #1c06de;
-    padding: 25px 310px;
+/* Table heading styles */
+th {
+    writing-mode: horizontal-tb;
+    transform: rotate(360deg);
+    text-orientation: sideways;
 }
