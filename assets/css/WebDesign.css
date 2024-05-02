@@ -130,12 +130,22 @@ ul {
     text-align: left;
 }
 
+ol{
+    font-weight: bold;
+}
+
 /* Image styles */
 img {
     max-width: 100%; /* Ensure images don't overflow their containers */
     height: auto; /* Let the height adjust automatically to maintain aspect ratio */
     display: block; /* Ensure images don't cause spacing issues */
     margin: 0 auto; /* Center images */
+}
+
+a{
+    font-size: x-large;
+    color:rgb(21, 10, 181);
+    font-weight: bold;
 }
 
 /* Button styles */
