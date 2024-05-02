@@ -17,14 +17,7 @@ header {
     text-shadow: 2px 2px 5px #b1b0af;
  }
 
- /* Responsive adjustments for the header */
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 5px; /* Adjust padding for smaller screens */
-    }
-}
 
- 
  /* side bar nav */
  .sidenav {
     height: 100%;
@@ -68,45 +61,11 @@ header {
     text-shadow: 2px 2px 5px grey;
 }
 
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
-/* Responsive adjustments for the sidebar navigation */
-@media only screen and (max-width: 600px) {
-    .sidenav {
-        width: 200px; /* Adjust width for smaller screens */
-    }
-    .sidenav a {
-        padding: 8px 8px; /* Adjust padding for smaller screens */
-        font-size: 18px; /* Adjust font size for smaller screens */
-    }
-}
-
-
-/* Responsive adjustments for the main content */
-@media only screen and (max-width: 600px) {
-    #main {
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-}
-
-
 article{
     background-color: #e8e7e6;
     max-width: 1200px;
     margin: 0 auto;
 }
-
-/* Responsive adjustments for the article */
-@media only screen and (max-width: 600px) {
-    article {
-        max-width: 90%; /* Adjust max-width for smaller screens */
-    }
-}
-
 
 h2{
     color: blue;
@@ -132,13 +91,6 @@ p {
   text-align: center;
 }
 
-/* Responsive adjustments for paragraphs */
-@media only screen and (max-width: 600px) {
-    p {
-        padding: 15px; /* Adjust padding for smaller screens */
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-}
 
 h3 {
     background-color: rgb(244, 241, 241);
@@ -180,21 +132,6 @@ h4{
 
 }
 
-/* Responsive adjustments for headings */
-@media only screen and (max-width: 600px) {
-    h2 {
-        font-size: 22px; /* Adjust font size for smaller screens */
-    }
-    h3 {
-        padding: 30px; /* Adjust padding for smaller screens */
-        font-size: 20px; /* Adjust font size for smaller screens */
-    }
-    h4 {
-        padding: 10px 30px; /* Adjust padding for smaller screens */
-        font-size: 18px; /* Adjust font size for smaller screens */
-    }
-}
-
 
 /*css table*/
 table, th, td {
@@ -224,16 +161,6 @@ img{
     
 }
 
-/* Responsive adjustments for images */
-@media only screen and (max-width: 600px) {
-    img {
-        width: 100%; /* Make images responsive by setting width to 100% */
-        height: auto; /* Allow height to adjust automatically */
-        margin: 10px 0; /* Add margin for better spacing */
-        float: none; /* Remove float for better display on smaller screens */
-    }
-}
-
 
 .grid-container {
     display: grid;
@@ -243,13 +170,6 @@ img{
     padding: 25px 310px;
 }
 
-/* Responsive adjustments for grid layout */
-@media only screen and (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: auto; /* Adjust grid columns for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-}
 
  /* Styling for the button */
  .button {
@@ -282,3 +202,85 @@ th {
     transform: rotate(360deg);
     text-orientation: sideways;
 }
+
+ /* Responsive adjustments for the header */
+ @media only screen and (max-width: 600px) {
+    header {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Responsive adjustments for the sidebar navigation */
+@media only screen and (max-width: 600px) {
+    .sidenav {
+        width: 200px; /* Adjust width for smaller screens */
+    }
+    .sidenav a {
+        padding: 8px 8px; /* Adjust padding for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+/* Responsive adjustments for the main content */
+@media only screen and (max-width: 600px) {
+    #main {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+/* Responsive adjustments for the article */
+@media only screen and (max-width: 600px) {
+    article {
+        max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+}
+
+/* Responsive adjustments for paragraphs */
+@media only screen and (max-width: 600px) {
+    p {
+        padding: 15px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Responsive adjustments for headings */
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 22px; /* Adjust font size for smaller screens */
+    }
+    h3 {
+        padding: 30px; /* Adjust padding for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    h4 {
+        padding: 10px 30px; /* Adjust padding for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+/* Responsive adjustments for images */
+@media only screen and (max-width: 600px) {
+    img {
+        width: 100%; /* Make images responsive by setting width to 100% */
+        height: auto; /* Allow height to adjust automatically */
+        margin: 10px 0; /* Add margin for better spacing */
+        float: none; /* Remove float for better display on smaller screens */
+    }
+}
+
+/* Responsive adjustments for grid layout */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: auto; /* Adjust grid columns for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
