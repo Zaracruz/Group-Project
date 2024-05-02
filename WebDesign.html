@@ -55,6 +55,11 @@
                        </h3>
                 </div>
             </div>
+           
+            <h2>Basic structure</h2>
+            <div class="container">
+                <img src="assets/img/html.png" alt="HTML Diagram" class="right">
+                <div class="content">
 
        <h4>Html is used to create webpages but does experience limitations<br>
         when it comes to fully responsive components. Therfore html should only<br>
@@ -147,6 +152,16 @@
              <div class="grid-container">
              <img src="assets/img/css-diagram.png" alt="CSS Diagram" class="right">  
         </div>
+         
+        <h2>Common Css Code</h2>
+        <ul>
+            <li>color : Used to set the text color.</li>
+            <li>font-size : Used to set the size of the font.</li>
+            <li>background-color : Used to set the background color.</li>
+            <li>margin : Used to create space around an element.</li>
+            <li>padding : Used to create space within an element.</li>
+          </ul> 
+             
     </article> 
         <br>
         <br>
@@ -171,6 +186,13 @@
             <!-- Button element -->
            <button class="button" onclick="showAlert()">Click me</button>
            <br>
+
+           <h2>How did we create this button?</h2><br>
+           <div class="grid-container">
+            <img src="assets/img/example.png" alt="Button Diagram" class="right">  
+       </div>
+          <h3>Now you can create your very own button!</h3>
+           
 
           </h4>
           <br>
@@ -215,8 +237,20 @@
             <img src="assets/img/web-development-using-html-css-3-320.webp" alt="webpage Diagram" class="right">  
        </div>
 
-
-
+       <div class="quiz-container">
+        <h2>What Did You Learn</h2>
+        <div id="question-container">
+            <p id="question">Question goes here</p>
+            <ul id="options">
+                <li><input type="radio" name="option" value="External"><span id="option1"></span></li>
+                <li><input type="radio" name="option" value="Hyper Text Markup Language"><span id="option3"></span></li>
+                <li><input type="radio" name="option" value="Specificity"><span id="option3"></span></li>
+                <li><input type="radio" name="option" value="Style the Webpage"><span id="option2"></span></li>
+            </ul>
+        </div>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+        <div id="result"></div>
+    </div>
 
 
           <br>
