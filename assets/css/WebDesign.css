@@ -17,7 +17,11 @@ header {
     text-shadow: 2px 2px 5px #b1b0af;
  }
 
-
+ /*responsive header text*/
+@media only screen and (max-width: 300px) {
+  header {font-size: 11px}
+}
+ 
  /* side bar nav */
  .sidenav {
     height: 100%;
@@ -61,6 +65,12 @@ header {
     text-shadow: 2px 2px 5px grey;
 }
 
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
 article{
     background-color: #e8e7e6;
     max-width: 1200px;
@@ -90,7 +100,6 @@ p {
   padding: 20px;
   text-align: center;
 }
-
 
 h3 {
     background-color: rgb(244, 241, 241);
@@ -132,19 +141,18 @@ h4{
 
 }
 
-
 /*css table*/
 table, th, td {
     border-collapse: collapse;
     margin: 0 auto;
     border:1px solid black;
     padding: 13px;
-    border: 4px solid #090909;
-    text-align: left;
-    padding: 8px;
     writing-mode: horizontal-tb;
     transform: rotate(360deg);
     text-orientation: sideways;
+    border: 4px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 
 }
 
@@ -170,7 +178,6 @@ img{
     
 }
 
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -178,7 +185,6 @@ img{
     background-color: #0676de;
     padding: 25px 310px;
 }
-
 
  /* Styling for the button */
  .button {
@@ -194,81 +200,3 @@ img{
 .button:hover {
     background-color: #0056b3;
 }
-
- /* Responsive adjustments for the header */
- @media only screen and (max-width: 600px) {
-    header {
-        padding: 5px; /* Adjust padding for smaller screens */
-    }
-}
-
-
-/* Responsive adjustments for the sidebar navigation */
-@media only screen and (max-width: 600px) {
-    .sidenav {
-        width: 200px; /* Adjust width for smaller screens */
-    }
-    .sidenav a {
-        padding: 8px 8px; /* Adjust padding for smaller screens */
-        font-size: 18px; /* Adjust font size for smaller screens */
-    }
-}
-
-
-/* Responsive adjustments for the main content */
-@media only screen and (max-width: 600px) {
-    #main {
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-}
-
-
-/* Responsive adjustments for the article */
-@media only screen and (max-width: 1200px) {
-    article {
-        max-width: 90%; /* Adjust max-width for smaller screens */
-    }
-}
-
-/* Responsive adjustments for paragraphs */
-@media only screen and (max-width: 600px) {
-    p {
-        padding: 15px; /* Adjust padding for smaller screens */
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-}
-
-/* Responsive adjustments for headings */
-@media only screen and (max-width: 600px) {
-    h2 {
-        font-size: 22px; /* Adjust font size for smaller screens */
-    }
-    h3 {
-        padding: 30px; /* Adjust padding for smaller screens */
-        font-size: 20px; /* Adjust font size for smaller screens */
-    }
-    h4 {
-        padding: 10px 30px; /* Adjust padding for smaller screens */
-        font-size: 18px; /* Adjust font size for smaller screens */
-    }
-}
-
-
-/* Responsive adjustments for images */
-@media only screen and (max-width: 600px) {
-    img {
-        width: 100%; /* Make images responsive by setting width to 100% */
-        height: auto; /* Allow height to adjust automatically */
-        margin: 10px 0; /* Add margin for better spacing */
-        float: none; /* Remove float for better display on smaller screens */
-    }
-}
-
-/* Responsive adjustments for grid layout */
-@media only screen and (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: auto; /* Adjust grid columns for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-}
-
