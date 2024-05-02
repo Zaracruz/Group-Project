@@ -202,10 +202,6 @@ img{
     }
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
 
 /* Responsive adjustments for the sidebar navigation */
 @media only screen and (max-width: 600px) {
@@ -228,7 +224,7 @@ img{
 
 
 /* Responsive adjustments for the article */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
     article {
         max-width: 90%; /* Adjust max-width for smaller screens */
     }
