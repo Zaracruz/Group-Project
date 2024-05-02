@@ -1,31 +1,32 @@
-/* General styles */
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(254, 253, 251);
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(254, 253, 251);
 }
-
+  
 /* Style the header */
 header {
     background-color: rgb(217, 217, 225);
     border: 2px solid black;
-    margin: auto;
+    margin: auto;  
     padding: 10px;
     text-align: center;
     color: rgb(27, 5, 168);
     text-shadow: 2px 2px 5px #b1b0af;
-}
+ }
 
-/* Responsive header text */
-@media only screen and (max-width: 300px) {
+ /* Responsive adjustments for the header */
+@media only screen and (max-width: 600px) {
     header {
-        font-size: 11px;
+        padding: 5px; /* Adjust padding for smaller screens */
     }
 }
 
-.sidenav {
+ 
+ /* side bar nav */
+ .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -67,109 +68,215 @@ header {
     text-shadow: 2px 2px 5px grey;
 }
 
-/* Adjustments for smaller screens */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Responsive adjustments for the sidebar navigation */
+@media only screen and (max-width: 600px) {
+    .sidenav {
+        width: 200px; /* Adjust width for smaller screens */
+    }
     .sidenav a {
-        font-size: 18px;
+        padding: 8px 8px; /* Adjust padding for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
     }
 }
 
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-    color: rgb(27, 5, 168);
-    text-shadow: 2px 2px 5px grey;
+
+/* Responsive adjustments for the main content */
+@media only screen and (max-width: 600px) {
+    #main {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
 }
 
-/* Article styles */
-article {
+
+article{
     background-color: #e8e7e6;
-    max-width: 100%; /* Change max-width to 100% */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px; /* Increase padding for smaller screens */
-    box-sizing: border-box; /* Include padding in max-width calculation */
 }
 
-/* Heading styles */
-h2 {
+/* Responsive adjustments for the article */
+@media only screen and (max-width: 600px) {
+    article {
+        max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+}
+
+
+h2{
     color: blue;
     text-align: center;
     text-decoration: underline;
 }
 
-/* Section styles */
+
 section {
-    text-align: center;
-    max-width: 100%;
-    margin: 20px; /* Reduce margin for smaller screens */
-    padding: 10px; /* Reduce padding for smaller screens */
-    box-sizing: border-box; /* Include padding in max-width calculation */
+    text-align: center; /* Aligning text to center */
+    max-width: 1000px; 
+    margin: 40px; /* Centering the section horizontally */
+    padding: 20px; 
     text-shadow: 2px 2px 5px #d1d0cf;
 }
 
-/* Paragraph styles */
 p {
-    background-color: #fdf8f8;
-    border: 5px solid rgb(21, 10, 181);
-    margin: 0 auto;
-    padding: 10px; /* Adjust padding for smaller screens */
-    text-align: center;
+  background-color: #fdf8f8;
+  max-width: 1000;
+  border: 5px solid rgb(21, 10, 181);
+  margin: 0 auto;  
+  padding: 20px;
+  text-align: center;
 }
 
-/* Heading styles */
+/* Responsive adjustments for paragraphs */
+@media only screen and (max-width: 600px) {
+    p {
+        padding: 15px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
 h3 {
     background-color: rgb(244, 241, 241);
+    width: 200px;
     border: 2px solid black;
-    padding: 20px;
-    margin: 20px; /* Reduce margin for smaller screens */
+    padding: 50px;
+    margin: 40px;
     text-align: center;
+   
 }
 
-/* Unordered list styles */
-ul {
+ul{
     text-align: left;
 }
 
-/* Image styles */
-img {
-    max-width: 100%; /* Ensure images don't overflow their containers */
-    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
-    display: block; /* Ensure images don't cause spacing issues */
-    margin: 0 auto; /* Center images */
+
+/*styling image to be psotions beside list*/
+.container {
+    width: 100%;
 }
 
-/* Button styles */
-.button {
+.right {
+    float: right;
+    margin-right: 80px; 
+}
+
+.content {
+    overflow: hidden; /* Clear the float */
+}
+
+
+h4{
+    background-color: #fdf8f8;
+    max-width: 1000px;
+    border: 2px solid rgb(21, 10, 181);
+    text-align: center;
+    padding: 20px 50px;
+    margin: 0 auto;
+
+}
+
+/* Responsive adjustments for headings */
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 22px; /* Adjust font size for smaller screens */
+    }
+    h3 {
+        padding: 30px; /* Adjust padding for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    h4 {
+        padding: 10px 30px; /* Adjust padding for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+/*css table*/
+table, th, td {
+    border:1px solid black;
+    padding: 13px;
+}
+
+ol{
+    border: 2px solid blue;
+    font-weight: bold;
+    padding: 30px;
+    font-size: large;
+}
+
+a{
+    font-size: x-large;
+    font-weight: bold;
+    color: blue;
+    text-align: left;
+    padding:20px 50px;
+}
+
+img{
+    float: right; /* Float the image to the right */
+    width: 570px; /* Set the width */
+    height: 400px; /* Let the height adjust automatically to maintain aspect ratio */
+    
+}
+
+/* Responsive adjustments for images */
+@media only screen and (max-width: 600px) {
+    img {
+        width: 100%; /* Make images responsive by setting width to 100% */
+        height: auto; /* Allow height to adjust automatically */
+        margin: 10px 0; /* Add margin for better spacing */
+        float: none; /* Remove float for better display on smaller screens */
+    }
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: #0676de;
+    padding: 25px 310px;
+}
+
+/* Responsive adjustments for grid layout */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: auto; /* Adjust grid columns for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+ /* Styling for the button */
+ .button {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: block;
-    margin: 20px auto; /* Center the button */
 }
 
-/* Button hover styles */
+/* Style for when hovering over the button */
 .button:hover {
     background-color: #0056b3;
 }
-
-/* Table styles */
+/*secong java table*/
 table {
-    width: 100%; /* Make tables responsive */
     border-collapse: collapse;
     margin: 0 auto;
 }
 
-/* Table cell styles */
 td, th {
-    border: 1px solid black;
-    padding: 8px;
+    border: 4px solid #090909;
     text-align: left;
+    padding: 8px;
 }
 
-/* Table heading styles */
 th {
     writing-mode: horizontal-tb;
     transform: rotate(360deg);
