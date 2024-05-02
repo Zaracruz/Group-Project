@@ -135,8 +135,17 @@ h4{
 
 /*css table*/
 table, th, td {
+    border-collapse: collapse;
+    margin: 0 auto;
     border:1px solid black;
     padding: 13px;
+    border: 4px solid #090909;
+    text-align: left;
+    padding: 8px;
+    writing-mode: horizontal-tb;
+    transform: rotate(360deg);
+    text-orientation: sideways;
+
 }
 
 ol{
@@ -184,23 +193,6 @@ img{
 /* Style for when hovering over the button */
 .button:hover {
     background-color: #0056b3;
-}
-/*secong java table*/
-table {
-    border-collapse: collapse;
-    margin: 0 auto;
-}
-
-td, th {
-    border: 4px solid #090909;
-    text-align: left;
-    padding: 8px;
-}
-
-th {
-    writing-mode: horizontal-tb;
-    transform: rotate(360deg);
-    text-orientation: sideways;
 }
 
  /* Responsive adjustments for the header */
