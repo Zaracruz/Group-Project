@@ -1,10 +1,10 @@
 //side bar navigation for home page 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("sideNav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
   }
   
   function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("sideNav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
   }

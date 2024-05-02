@@ -1,5 +1,35 @@
-/* side bar nav */
-.sidenav {
+/* Sine's Design Theory */
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sumDesignTheory{
+    background-color: aqua;
+}
+
+.sectDesignPrinciples{
+    background-color: rgb(20, 211, 62);
+}
+
+.sectColourTheory{
+    background-color: rgb(198, 3, 215);
+}
+
+.sectTypography{
+    background-color: rgb(229, 12, 48);
+}
+
+.sectLayout{
+    background-color: rgb(217, 255, 0);
+}
+
+
+
+
+
+
+/* Zara's nav bar (Side) */
+.sideNav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -12,7 +42,7 @@
     padding-top: 60px;
 }
   
-.sidenav a {
+.sideNav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -22,11 +52,11 @@
     text-shadow: 2px 2px 5px #8b8b8a;
 }
   
-.sidenav a:hover {
+.sideNav a:hover {
     color: #fdf8f8;
 }
   
-.sidenav .closebtn {
+.sideNav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -43,6 +73,33 @@
 
 
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sideNav {padding-top: 15px;}
+    .sideNav a {font-size: 18px;}
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(217, 217, 225);
+    text-align: center;
+    color: rgb(27, 5, 168);
+    text-shadow: 2px 2px 5px #b1b0af;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
