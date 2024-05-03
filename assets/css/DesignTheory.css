@@ -1,4 +1,10 @@
 /* Sine's Design Theory */
+header{
+    /* background-color: rgb(187, 187, 194); */
+    top: 0;
+    left: 0;
+}
+
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
