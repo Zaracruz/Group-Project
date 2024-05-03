@@ -7,24 +7,216 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <title>User-Centered Design and Usability</title>
-        <link href ="assets/css/DesignTheory.css" rel="stylesheet">
+        <link href ="assets/css/designTheory.css" rel="stylesheet">
     </head>
     <body>
 
-        <div class="topnav">
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="home.html">Home</a>
-                <a href="WebDesign.html">Web Design Essentials</a>
-              </div>
-              
-              <div id="main">
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-              </div> 
-        </div>
+        <header class="headerDT">
+            <!-- Zara's Navigation Bar -->
+            <div class="topnav">
+                <div id="sideNav" class="sideNav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="home.html">Home</a>
+                    <a href="WebDesign.html">Web Design Essentials</a>
+                </div>
+                
+                <div id="main">
+                    <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> -->
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
+                </div> 
+            </div>            
+        </header>
 
+        <br><br>
 
+        <article class="articleContainer">
+            <h2>Design Theory</h2>
+            <hr>
+            <section>
+                <p class="infoParagraph">Design theory is a broad field that encompasses principles, concepts, and methodologies that are used to create effective and impactful designs across various disciplines. Examples include  product design, graphic design, architecture, user experience (UX) design, and more </p>
+            </section>
+            <br>
 
-        <script src ="assets/js/Design.js"></script>
+        </article>
+
+        <br>
+
+        <article class="articleContainer">
+            <h2>Design Principles</h2>
+            <hr>
+            <section>
+                <p class="infoParagraph">Design Principles are the fundamental guidelines that help creators, designers, and artists arrange the elements of their work efficiently. These principles create functional and visually appealing designs across various mediums. <strong>Click on the buttons below to find out more!</strong></p>
+            </section>
+            <br>
+            <section>
+                <button id="btnBal" class="btnDP">Balance</button>
+                <button id="btnHar" class="btnDP">Harmony</button>
+                <button id="btnCon" class="btnDP">Contrast</button>
+                <button id="btnEmph" class="btnDP">Emphasis</button>
+                <button id="btnScale" class="btnDP">Scale</button>
+                <button id="btnRep" class="btnDP">Repitition</button>
+                <button id="btnHier" class="btnDP">Hierarchy</button>
+            </section>
+
+            <div id="balance" class="balance">
+                <section id="infoDP" class="infoDP">
+                    <p> &bull; Arrange elements to create visual stability, whether symmetrically, asymmetrically, or radially.</p>
+                </section>
+            </div>
+
+            <div id="harmony" class="harmony">
+                <section id="infoDP" class="infoDP ">
+                    <p> &bull; Ensure all elements work together cohesively for a consistent look and feel.</p>
+                </section>                
+            </div>
+
+            <div id="contrast" class="contrast">
+                <section id="infoDP" class="infoDP">
+                    <p> &bull; Highlight differences between elements for visual interest and emphasis.</p>
+                </section>                
+            </div>
+
+            <div id="emphasis" class="emphasis">
+                <section id="infoDP" class="infoDP">
+                    <p> &bull; Make certain elements stand out to draw attention and establish hierarchy.</p>
+                </section>
+            </div>
+
+            <div id="scale" class="scale">
+                <section id="infoDP" class="infoDP">
+                    <p> &bull; Maintain proper size and ratio of elements for visual balance.</p>
+                </section>
+            </div>
+
+            <div id="repitition" class="repitition">
+                <section id="infoDP" class="infoDP">
+                    <p> &bull; Repeat elements to create patterns and guide the viewer's eye through the design.</p>
+                </section>
+            </div>
+            
+            <div id="hierarchy" class="hierarchy">
+                <section  id="infoDP" class="infoDP">
+                    <p> &bull; Establish the order of importance to direct the viewer's focus.</p>
+                </section>
+            </div>
+
+            <br>
+        </article>
+
+        <br>
+
+        <article class="articleContainer">
+            <h2>Colour Theory</h2>
+            <hr>
+            <section>
+                <p class="infoParagraph">Colour Theory is essentially the study of how colours interact  with each other and how they can be combined or contrasted to create visually appealing compositions.<strong>Click on the buttons below to find out more!</strong> </p>
+            </section>
+
+            <section>
+                <button id="btnPri" class="btnCT">Primary Colours</button>
+                <button id="btnSec" class="btnCT">Secondary Colours</button>
+                <button id="btnTer" class="btnCT">Tertiary Colours</button>
+                <button id="btnCom" class="btnCT">Complementary Colours</button>
+                <button id="btnAnal" class="btnCT">Analogous</button>
+                <button id="btnWarmCool" class="btnCT">Warm & Cool Colours</button>
+                <button id="btnTintShadeTone" class="btnCT">Tints, Shades & Tones</button>
+            </section>
+            <br>
+
+            
+            <div id="primary" class="primary">
+                <section id="infoCT" class="infoCT">
+                    <h3 class="headerCT">Primary Colours</h3>
+                    <p> &bull; These are the foundation of color theory. In traditional color theory, the primary colors are red, blue, and yellow. All other colors can be created by mixing these primary colors together.</p>
+                </section>
+
+                <img class="imgCT" id="imgPrimary" src="assets/img/primary.png" alt="primaryColours" width="50%">
+            </div>
+
+            <div id="secondary" class="secondary">
+                <section id="infoCT" class="infoCT">
+                    <h3 class="headerCT">Secondary Colours</h3>
+                    <p> &bull; These are created by mixing equal parts of two primary colors. The secondary colors are orange (red + yellow), green (blue + yellow), and purple (red + blue).</p>
+                </section>
+
+                <img class="imgCT" id="imgSecondary" src="assets/img/secondary.png" alt="secondaryColours" width="50%">
+            </div>
+
+            <div id="tertiary" class="tertiary">
+                <section id="infoCT" class="infoCT">
+                    <h3 class="headerCT">Tertiary Colours</h3>
+                    <p> &bull; These are created by mixing a primary color with a secondary color adjacent to it on the color wheel. For example, mixing red and orange creates red-orange. Tertiary colors allow for more nuanced shades and tones.</p>
+                </section>
+
+                <img class="imgCT" id="imgTertiary" src="assets/img/tertiary.png" alt="tertiaryColours" width="50%">
+            </div>
+            
+            <div id="complementary" class="complementary">
+                <section id="infoCT" class="infoCT">
+                    <h3 class="headerCT">Complementary Colours</h3>
+                    <p> &bull; These are colors that are opposite each other on the color wheel. When placed next to each other, they create a strong contrast and enhance each other's intensity. Examples include red and green, blue and orange, and yellow and purple.</p>
+                </section>
+
+                <img class="imgCT" id="imgCom" src="assets/img/complimentary.png" alt="complementaryColours" width="50%">
+            </div>
+
+            <div id="analogous" class="analogous">
+                <section id="infoCT" class="infoCT">
+                    <h3 class="headerCT">Analogous Colours</h3>
+                    <p> &bull; These are colors that are adjacent to each other on the color wheel. They usually create a harmonious and calming effect when used together. An example would be yellow, yellow-green, and green.</p>
+                </section>
+
+                <img class="imgCT" id="imgAnal" src="assets/img/analogous.png" alt="analogousColours" width="50%">
+            </div>
+
+            <div id="warmCool" class="warmCool">
+                <section id="infoCT" class="infoCT">
+                    <h3 class="headerCT">Warm & Cool Colours</h3>
+                    <p> &bull; Colors can be categorized as either warm or cool based on their placement on the color wheel. Warm colors (such as red, orange, and yellow) evoke feelings of warmth, energy, and excitement, while cool colors (such as blue, green, and purple) evoke feelings of calmness, tranquility, and serenity.</p>
+                </section>
+
+                <img class="imgCT" id="imgWarmCool" src="assets/img/warmCool.png" alt="warmCoolColours" width="50%">
+            </div>
+
+            <div id="tintShadeTone" class="tintShadeTone">
+                <section id="infoCT" class="infoCT">
+                    <h3 class="headerCT">Tint, Shade & Tone</h3>
+                    <p> &bull; These terms refer to variations of a single color. A tint is created by adding white to a color, making it lighter. A shade is created by adding black to a color, making it darker. And a tone is created by adding gray to a color, altering its intensity.</p>
+                </section>
+
+                <img class="imgCT" id="imgTST" src="assets/img/tintShadeTone.png" alt="tSTColours" width="50%">
+            </div>
+            <br>
+        </article>
+
+        <br>
+
+        <article class="articleContainer">
+            <h2>Typography</h2>
+            <hr>
+            <section>
+                <p class="infoParagraph">Typography is the art and technique of arranging type to make written language legible, readable, and visually appealing when displayed. It involves selecting typefaces, fonts, point sizes, line lengths, line-spacing, and adjusting the spacing between groups of letters and between pairs of letters.</p>
+            </section>
+            <br>
+        </article>
+
+        <br>
+
+        <article class="articleContainer">
+            <h2>Layout</h2>
+            <hr>
+            <section>
+                <p class="infoParagraph">UI/UX design is a blend of art and science, aiming to create digital experiences that are not only visually appealing but also intuitive and user-friendly.</p>
+            </section>
+            <br>
+        </article>
+
+        <br><br><br><br>
+
+        <footer>
+            <p>Authors: Zara Cruise, Lauren Brophy, Sine Whooley</p> 
+        </footer>
+     
+        <script src ="assets/js/designTheoryScript.js"></script>
     </body>
